@@ -1,12 +1,14 @@
 
 import React, { useState, useEffect, createContext, useContext } from 'react';
 import {
-  FaUserMd, FaUsers, FaCalendarAlt, FaClipboardMedical, FaPills, FaFileMedicalAlt,
+  FaUserMd, FaUsers, FaCalendarAlt, FaPills, FaFileMedicalAlt,
   FaChartLine, FaHistory, FaCog, FaSignOutAlt, FaPlus, FaSearch, FaBell, FaBars,
   FaArrowLeft, FaEdit, FaEye, FaCheckCircle, FaTimesCircle, FaClock, FaExclamationTriangle,
   FaCheck, FaCircleNotch, FaUser, FaStethoscope, FaFlask, FaVial, FaFilePdf, FaFileExcel,
   FaRegLightbulb
 } from 'react-icons/fa';
+
+import { FaClipboardMedical } from "react-icons/fa6";
 
 // --- Contexts ---
 const AuthContext = createContext(null);
