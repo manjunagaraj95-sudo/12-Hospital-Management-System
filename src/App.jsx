@@ -1,14 +1,29 @@
 
 import React, { useState, useEffect, createContext, useContext } from 'react';
 import {
-  FaUserMd, FaUsers, FaCalendarAlt, FaPills, FaFileMedicalAlt,
-  FaChartLine, FaHistory, FaCog, FaSignOutAlt, FaPlus, FaSearch, FaBell, FaBars,
-  FaArrowLeft, FaEdit, FaEye, FaCheckCircle, FaTimesCircle, FaClock, FaExclamationTriangle,
-  FaCheck, FaCircleNotch, FaUser, FaStethoscope, FaFlask, FaVial, FaFilePdf, FaFileExcel,
-  FaRegLightbulb
-} from 'react-icons/fa';
+  FaUserMd,
+  FaUsers,
+  FaCalendarAlt,
+  FaFileMedical,
+  FaPills,
+  FaFileMedicalAlt,
+  FaChartLine,
+  FaHistory,
+  FaCog,
+  FaSignOutAlt,
+  FaPlus,
+  FaSearch,
+  FaBell,
+  FaBars,
+  FaArrowLeft,
+  FaEdit,
+  FaEye,
+  FaCheckCircle,
+  FaTimesCircle,
+  FaClock,
+  FaExclamationTriangle
+} from "react-icons/fa";
 
-import { FaClipboardMedical } from "react-icons/fa6";
 
 // --- Contexts ---
 const AuthContext = createContext(null);
@@ -266,7 +281,7 @@ const NavIcon = ({ name }) => {
     case 'PatientsList': return <FaUsers />;
     case 'DoctorsList': return <FaUserMd />;
     case 'AppointmentsList': return <FaCalendarAlt />;
-    case 'DiagnosesList': return <FaClipboardMedical />;
+    case 'DiagnosesList': return <FaFileMedical />;
     case 'MedicationsList': return <FaPills />;
     case 'AuditLogsList': return <FaHistory />;
     case 'Settings': return <FaCog />;
